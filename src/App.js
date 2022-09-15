@@ -1,8 +1,35 @@
-import React, { Component } from "react";
+import React from "react";
 
-class App extends Component {
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      num: 1,
+    };
+  }
+
   render() {
-    return <div className="wrapper"></div>;
+    const plus = () => {
+      this.setState({ num: this.state.num + 1 });
+    };
+
+    const minus = () => {
+      if (this.state.num > 0) {
+        this.setState({ num: this.state.num - 1 });
+      }
+    };
+
+    return (
+      <div className="counter">
+        <button className="btn" onClick={plus}>
+          +
+        </button>
+        <p className="count">{this.state.num}</p>
+        <button className="btn" onClick={minus}>
+          -
+        </button>
+      </div>
+    );
   }
 }
 
