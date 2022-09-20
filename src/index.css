@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,259 @@
 }
 
 body {
+  font-family: "Montserrat", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  background-color: #0d263b;
+  width: 1483px;
+}
+
+.container {
+  max-width: 1180px;
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 14px;
+}
+
+.nav-list {
+  width: 333px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 12px 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #0d263b;
+}
+
+/*  ==================Body====================== */
+
+.searchBar {
+  width: 731px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.searchBar input {
+  margin-top: 24px;
+  width: 527px;
+  padding: 12px 43px;
+  margin-right: 24px;
+  border: 1px solid #e6e9ec;
+}
+
+.searchBar img,
+.spec-item img {
+  width: 20px;
+  height: 14.5px;
+}
+
+.icon {
+  position: absolute;
+  left: 2%;
+  bottom: 22%;
+}
+
+.search-icon {
+  position: absolute;
+  right: 18%;
+  bottom: 22%;
+}
+
+.search-btn {
+  background-color: #0061df;
+  padding: 12px 50px;
+  border: none;
+  color: #fff;
+}
+
+.heading {
+  margin-block: 50px 70px;
+  text-align: center;
+}
+
+.heading h1 {
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -2%;
+  color: #0d263b;
+  margin-bottom: 0.5rem;
+}
+
+.heading p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #696969;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.search-result {
+  font-size: 0.875rem;
+  padding-block: 1rem;
+}
+
+.search-result .bold {
+  font-weight: 600;
+}
+
+.card {
+  max-width: 380px;
+  position: relative;
+  transition: all 0.2s ease-in;
+}
+
+.card:hover {
+  box-shadow: 0px 30px 38px rgba(0, 0, 0, 0.09);
+  cursor: pointer;
+}
+
+.delete-btn {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #ff0000;
+  padding: 5px 10px;
+  max-width: 71px;
+  border-radius: 3px;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.card-wrapper {
+  border: 1px solid #e6e9ec;
+  border-top: none;
+}
+
+.item-description {
+  padding: 1.5rem 1.25rem;
+  position: relative;
+}
+
+.item-title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
+
+.item-address {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.item-specs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-icon {
+  width: 38px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -1.2rem;
+  right: 1rem;
+}
+.spec-item {
+  font-size: 0.875rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.spec-item span {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: #696969;
+  margin-top: 0.5rem;
+}
+
+.item-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e6e9ec;
+  padding: 1rem 1.5rem;
+}
+
+.tool-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tool-bar img {
+  width: 15px;
+  cursor: pointer;
+}
+
+.like-btn {
+  background-color: #f6f8f9;
+  padding: 10px;
+  max-width: 35px;
+  border-radius: 50%;
+}
+
+.item-price p {
+  font-weight: 600;
+  line-height: 1.5rem;
 }
