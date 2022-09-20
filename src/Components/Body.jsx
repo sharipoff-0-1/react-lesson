@@ -57,7 +57,7 @@ export default class Body extends Component {
             return (
               <div key={value.id} className="card">
                 <div className="delete-btn">delete</div>
-                <img src={value?.image} alt="product-image" />
+                <img src={value?.image} alt={value.title} />
                 <div className="card-wrapper">
                   <div className="item-description">
                     <img
